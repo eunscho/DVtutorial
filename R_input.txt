@@ -1,0 +1,9 @@
+semb <- '
+	A =~ Y1 + Y2+ Y3
+	B =~ Y4 + Y5 + Y6
+	C =~ Y7 + Y8 + Y9
+	D =~ Y10 + Y11 + Y12
+	S =~ A + B + C
+	'
+obj.semb <- sem(semb, data=sim.data2)
+standardizedsolution(obj.semb)

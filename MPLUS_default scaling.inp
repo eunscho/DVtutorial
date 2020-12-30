@@ -1,0 +1,13 @@
+TITLE: Unconstrained CFA with confidence intervals
+
+DATA:
+    FILE IS mplusind2.txt;
+    TYPE IS IND;
+	
+	
+VARIABLE: NAMES ARE Y1-Y12;
+
+! DEFAULT SCALING	
+MODEL: A BY Y1-Y3; B BY Y4-Y6; C BY Y7-Y9; D BY Y10-Y12; S BY A B C;
+	
+OUTPUT: CINTERVAL; STAND;
